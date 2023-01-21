@@ -1,0 +1,189 @@
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head img{
+    top: 15px;
+    left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.head h3{
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.head a{
+    text-decoration: none;
+    margin-right: 70px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: rgb(64, 135, 241);
+}
+
+.head a:hover{
+    color: darkblue;
+}
+
+.container{
+    position: absolute;
+    margin-top: 35px;
+    background-color: rgb(233, 239, 241);
+    width: 92%;
+    height: 100vh;
+    margin-left: 4%;
+}
+
+.game{
+    
+    margin-top:13px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+
+.text{
+  background-color: #e927e92d;
+  width: 48.1%;
+  height: 28vh;
+  margin-left: 200px;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.text{
+    background-color: #e927e92d;
+    background-image: linear-gradient( rgb(240, 173, 210), white);
+}
+
+
+button{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 35px;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 20px;
+}
+button:hover {
+    background-color: tomato;
+    color: #fff;
+    border: none;
+   
+}
+
+.login{
+    border: .5px solid rgb(176, 176, 207);
+    background-color:#fff;
+    position: absolute;
+    left: 1000px;
+    text-align: center;
+    width: 350px;
+    height: 560px;
+    margin-top: 48px;
+    opacity: .8;
+    box-shadow: 1px 2px 5px lightblue;
+    
+}
+
+.login p{
+    left: 0px;
+    font-size: 17px;
+}
+
+.loginbox{
+    top: 0;
+    left: 0;
+    position: relative;
+    border: 1px solid rgb(167, 162, 162);
+    width: 85%;
+    height: 11vh;
+    margin-left: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border;
+}
+
+.loginbox:hover{
+    border: 1px solid rgb(14, 158, 224);
+}
+
+
+.loginbox .fa{
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    font-size: 25px;
+}
+
+
+
+.loginbox #elipse{
+    top: 10px;
+    left: 282px;
+    position: absolute;
+}
+
+.loginbox #elipse:hover{
+    color: cyan;
+}
+
+.loginbox h6{
+    top: -25px;
+    left: 35px;
+    position: absolute;
+    font-size: 15px;
+  }
+
+  .login h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+h5{
+    top: 10px;
+    left: -47px;
+    position: relative;
+}
+
+p i{
+    top: -5px;
+    left: -80px;
+    position: relative;
+}
+
+
+.loginbox a{
+    top: 200px;
+    position: relative;
+    color: rgb(64, 201, 201);
+    font-size: 17px;
+    
+}
+
+.loginbox a:hover{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
