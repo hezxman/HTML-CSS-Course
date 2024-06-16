@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1559585888-6b01c8ea796b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1629&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.menu-bar-1{
+    background-color: rgb(45, 92, 45);
+    text-align: center;
+}
+
+.menu-bar-1 ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.menu-bar-1 ul li{
+    width: 130px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.menu-bar-1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-bar-1 ul li a:hover{
+    color: black;
+}
+
+.active, .menu-bar-1 ul li:hover{
+    background-color: rgb(21, 141, 211);
+    border-radius: 2px;
+}
+
+.menu-bar-2{
+    display: none;
+}
+
+.menu-bar-1 ul li:hover .menu-bar-2{
+  display: block;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 15px;
+  background-color: rgb(21, 141, 211);
+}
+
+.menu-bar-1 ul li:hover .menu-bar-2 ul{
+    display: block;
+    margin: 8px;
+}
+
+.menu-bar-1 ul li:hover .menu-bar-2 ul li{
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    text-align: left;
+}
+
+.menu-bar-1 ul li:hover .menu-bar-2 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar-3{
+    display: none;
+}
+
+.menu-bar-2 ul li:hover .menu-bar-3{
+    display: block;
+    position: absolute;
+    margin-left:120px;
+    margin-top:10px;
+    background-color: rgb(21, 141, 211);
+}
+
+.menu-bar-4{
+    display: none;
+}
+
+.menu-bar-3 ul li:hover .menu-bar-4{
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 10px;
+    background-color:  rgb(21, 141, 211);
+}
+
+.area-1 img-1{
+    position: absolute;
+    left: 10px;
+    z-index: -1;
+}

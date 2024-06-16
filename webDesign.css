@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgb(201, 189, 189), white);
+
+}
+
+
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    background-image: linear-gradient(gray, white);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.head-logo h1{
+  position: relative;
+  top: -20px;
+  left: 95px;
+  font-size: 45px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.head-logo h3{
+    font-family: 'Bungee Shade';
+    padding: 0 30px;
+}
+span{
+    color: rgb(6, 22, 114);
+    font-size: larger;
+}
+.nav-bar ul{
+  display: inline-flex;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+
+.nav-bar a:hover{
+    color: dimgray;
+}
+
+.nav-bar ul li ul{
+    display: none;
+}
+
+.nav-bar ul li:hover ul{
+  display: block;
+  position: absolute;
+  color: dimgray;
+  margin-left: -15px;
+  font-weight: bold;
+}
+
+.nav-bar ul li:hover ul li a{
+    border-top: 1px solid rgb(0, 81, 255);
+    border-bottom: 1px solid rgb(0, 81, 255);
+   
+}
+
+.photo-slide{
+    position: relative;
+    z-index: -1;
+}
+
+
+
+.room-reserve{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 700px;
+    left: 150px;
+}
+
+.check{
+    margin-right: 30px;
+    position: relative;
+    top: -40px;
+    left: 500px;
+    font-family: sans-serif;
+}
+
+.check h4{
+    color: white;
+    font-size: 20px;
+}
+
+.date-bar{
+    margin-right: 30px;
+}
+
+#date{
+    padding: 5px 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#date:hover{
+    background-color: orangered;
+}
+
+#number{
+    padding: 7px 0px;
+    border: 2px solid white;
+    background-color: gainsboro;
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+#number:hover{
+    background-color: orangered;
+}
+
+.adult{
+    padding: 5px 0px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 30px;
+}
+
+.adult:hover{
+    background-color: orangered;
+}
+
+.kids{
+    padding: 4px 0px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 30px;
+}
+
+.kids:hover{
+    background-color: orangered;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: limegreen;
+    color: white;
+    outline: none;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover{
+ background-color: orangered;
+}
+
+
+
+.photo-1, .photo-2, .photo-3, .photo-4, .photo-5{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.photo-slide img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 20s linear infinite;
+}
+
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+
+.photo-1{
+    animation: slider1 20s linear infinite;
+}
+.photo-2{
+    animation: slider2 20s linear infinite;
+}
+.photo-3{
+    animation: slider3 20s linear infinite;
+}
+.photo-4{
+    animation: slider4 20s linear infinite;
+}
+.photo-5{
+    animation: slider5  20s linear infinite;
+}
+
+@keyframes slider1 {
+    0%{
+        visibility: visible;
+    }
+    20%{
+        visibility: visible;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+    
+}
+
+@keyframes slider2 {
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: visible;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+    
+}
+
+@keyframes slider3 {
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: visible;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+    
+}
+
+@keyframes slider4 {
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+    
+}
+
+@keyframes slider5 {
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+    
+}
+
+/*--food--*/
+
+.delicacies{
+    display: flex;
+    margin-top: 1000px;
+    flex-direction: column;
+}
+
+span{
+    color: white;
+    text-align: center;
+}
+
+.asian{
+    display: flex;
+}
+
+.asian img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.african{
+    display: flex;
+}
+
+.african img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.european{
+    display: flex;
+}
+
+.european img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+/*--end food--*/
+
+
+/*--drinks--*/
+
+.drinks{
+    display: flex;
+    top: 1300px;
+    flex-direction: column;
+}
+
+.wine{
+    display: flex;
+}
+
+.wine img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.beverages{
+    display: flex; 
+}
+
+.beverages img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.assorted img{
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.assorted{
+    display: flex;
+}
+
+
+/*--end drinks--*/
+
+/*--footer--*/
+
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+.foot-bar{
+  background-color: rgb(176, 186, 192);
+}
+
+form{
+    position: relative;
+    left: 600px;
+    top: 50px;
+}
+
+input[type = "text"]{
+    padding: 4px 70px;
+}
+
+input[type = "submit"]{
+    padding: 4px 20px;
+}
+
+
+.foot-logo h1{
+    position: relative;
+    top: -20px;
+    left: 95px;
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  }
+  
+  .foot-logo h3{
+      font-family: 'Bungee Shade';
+      padding: 0 30px;
+  }
+  span{
+      color: rgb(6, 22, 114);
+      font-size: larger;
+  }
+
+  #foot-address{
+      margin-left: 1300px;
+      margin-top: -120px;
+  }
+
+

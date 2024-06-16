@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <ul>
+        <li id="lagosBtn" onclick="lagosClick()"><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+               <ul>
+                     <li><a href="#">Lagos</a></li>
+                     <li><a href="#">Abuja</a></li>
+                     <li><a href="#">port-Harcourt</a></li>
+               </ul>
+        </li>
+        <li id="list"><a href="#">Rooms</a>
+              <ul id="items">
+                    <li id="standard" onclick="buttonClick()"><a href="images/standard-room.jpg">Standard</a></li>
+                    <li onclick="buttonTouch()"><a href="images/executive-room.jpg">Executive</a></li>
+                    <li onclick="buttonPress()"><a href="images/deluxe-room.jpg">Deluxe</a></li>
+                    <li onclick="buttonHit()"><a href="images/super-deluxe-room.jpg">Super Deluxe</a></li>
+              </ul>
+        </li>
+        <li id="event"><a href="#">Events</a>
+                <ul>
+                     <li onclick="partyClick()"><a href="#">Parties</a></li>
+                     <li><a href="#">Weddings</a></li>
+                     <li><a href="#">Conferences</a></li>
+                     <li><a href="#">Live band</a></li>
+                </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+        <div class="standard">
+            <img src="images/standard-room.jpg" alt="">
+        </div>
+        <div class="executive">
+            <img src="images/executive-room.jpg" alt="">
+        </div>
+        <div class="deluxe">
+            <img src="images/deluxe-room.jpg" alt="">
+        </div>
+        <div class="super-deluxe">
+            <img src="images/super-deluxe-room.jpg" alt="">
+        </div>
+    
+
+    <script src="form.js"></script>
+    
+</body>
+</html>

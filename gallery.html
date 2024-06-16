@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .column {
+        float: left;
+        width: 12.5%;
+        padding: 10px;
+    }
+
+    .column img {
+        opacity: .8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .container {
+        position: relative;
+        display: none;
+    }
+
+    #imageIext {
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        color: white;
+        font-size: 20px;
+        
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="images/Innerconcept-photo1.jpg" alt="Elegance and Style" style="width: 100%; max-height: 300px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo2.jpg" alt="Classy Concept" style="width: 100%; max-height: 148px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo3.jpg" alt="Comfort" style="width: 100%; max-height: 148px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo4.jpg" alt="Beauty and Class"  style="width: 100%;max-height: 148px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo5.jpg" alt="Luxury Redefined"  style="width: 100%; min-height: 148px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo6.jpg" alt="Coner your thoughts" style="width: 100%; max-height: 148px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo7.jpg" alt="Clean and Neat" style="width: 100%; max-height: 148px;" onclick="imgClick(this)">
+        </div>
+        <div class="column">
+            <img src="images/Innerconcept-photo8.jpg" alt="Lights" style="width: 100%;min-height: 148px;" onclick="imgClick(this)">
+        </div>
+    </div>
+
+    <div class="container">
+        <span  onclick="this.parentElement.style.display = 'none'" class="closebtn">&times;</span>
+        
+        <img id="expandedImage" style="width: 100%">
+        <div id="imageText"></div>
+    </div>
+
+    
+
+  <script>
+      function imgClick(imgs) {
+          var expandPhoto = document.getElementById('expandedImage');
+          var photoText = document.getElementById('imageText');
+          expandPhoto.src = imgs.src; 
+          photoText.innerHTML = imgs.alt;
+          expandPhoto.parentElement.style.display = "block";
+
+      }
+     
+  </script>  
+</body>
+</html>

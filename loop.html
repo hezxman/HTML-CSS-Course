@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        width: 50%;
+        height: 80vh;
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    
+</style>
+<body>  <div id="container">
+    <div id="mybox" style="background-color: blue; border-radius: 3px; position: absolute; left: 0px; top: 0px; min-width: 100px; min-height: 100px; text-align: center; font-weight: bold; color: #999;">
+
+    </div>
+    </div>
+
+   
+   
+    
+
+<script>
+
+    var id = null;
+    var position = 0;
+    var box = document.getElementById('mybox');
+    document.addEventListener('DOMContentLoaded', function() {
+       var move = setInterval((event) => {
+            if (position == 500) {
+                clearInterval(move);
+            }  else {
+                position++;
+                box.style.top = position + "px";
+                box.style.left = position + "px";
+            }
+          }, 10);
+    });
+
+  
+</script>    
+</body>
+</html>

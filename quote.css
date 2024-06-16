@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+    font-family: sans-serif;
+
+   
+}
+
+.head{
+    color:#fff;
+}
+
+span{
+    color: rgb(231, 7, 7);
+    font-size: 30px;
+    font-family: cursive;
+    line-height: 0%;
+}
+
+#sun{
+    font-family: cursive;
+    color: gray;
+}
+
+.main{
+    letter-spacing: normal;
+
+}
+.bar {
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    max-width: 1537px;
+    background: rgb(0, 0, 0);
+    background: rgba( 0, 0, 0, .4);
+}
+
+.bar a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    margin-left: 8em;
+    text-align: center;
+    color: white;
+    opacity: .7;
+}
+a:hover {
+    opacity: 1;
+}
+
+
+
+
+section{
+    margin: 0;
+}
+
+.show{
+    text-align: center;
+    color: rgb(24, 9, 9);
+    display: flex;
+    margin-top: 10%;
+}
+
+.show h4{
+
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.show p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.log{
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 9%;
+    background-image: url(https://images.unsplash.com/photo-1488562914596-f2d4280bc098?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+
+   
+}
+
+.kit{
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 9%;
+    background-image: url(https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+
+}
+
+.kit p{
+
+    color: #fff;
+    font-weight: normal;
+}
+
+.bed{
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 9%;
+    background-image: url(https://images.unsplash.com/photo-1512918580421-b2feee3b85a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    
+}
+
+.media{
+    display: flex;
+    align-items: center;
+}
+
+
+input {
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 38.1%;
+    padding: 12px;
+    border: none;
+    background-color:#fff;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+
+footer p {
+    color: #fff;
+}
+
+.fas {
+    color: #333;
+    position: relative;
+    left: -2%;
+    font-size: 20px;
+}

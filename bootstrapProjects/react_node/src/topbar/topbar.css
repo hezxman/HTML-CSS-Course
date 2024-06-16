@@ -1,0 +1,26 @@
+
+.topbar {
+    width: 97%;
+    background-color: rgb(187, 4, 4);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+   
+}
+
+.paul {
+    color: #fff;
+    background-color: inherit;
+    font-size: 21px;
+    text-shadow: 3px 3px #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.itemGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+    
